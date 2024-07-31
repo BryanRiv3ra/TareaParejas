@@ -1,0 +1,1 @@
+mi compañera para esta tarea fue blanky y para usar lo que ella tenia en su proyecto nos pasamos los archivos .jar y los colocamos en la carpetas que iban en el proyecto para agregarlos como libreria y assi por medio del import los ingresamos al main  para solo llamarlos y usar su informacion o crear nuevos.
