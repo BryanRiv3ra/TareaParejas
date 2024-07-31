@@ -1,17 +1,25 @@
 package umg.ejercicio;
+import vehiculos.Coche;
+import vehiculos.Moto;
+import vehiculos.Vehiculo;
+import conductores.Conductor;
+import conductores.ConductorDeCoche;
+import conductores.ConductorDeMoto;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Vehiculo vehiculo = new Vehiculo ("Volkswagen", "Volkswagen Golf", 2017);
+        Moto moto = new Moto("Honda", "Honda CBR600RR",2020, true);
+        Coche coche = new Coche("Volkswagen", "Volkswagen Golf", 2017, 2);
+        Conductor conductor = new Conductor("Blanky", "C5448544");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        System.out.println("\nInformacion del vehiculo:");
+        vehiculo.mostrarDetalles();
+        System.out.println("\nInformacion del conductor de la moto");
+        moto.mostrarDetalles();
+        System.out.println("\nInformacion completa del coche:");
+        coche.mostrarDetalles();
+        System.out.println("\nInformacion del Conductor:");
+        conductor.mostrarINFO();
     }
 }
