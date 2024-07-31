@@ -11,15 +11,22 @@ public class Main {
         Vehiculo vehiculo = new Vehiculo ("Volkswagen", "Volkswagen Golf", 2017);
         Moto moto = new Moto("Honda", "Honda CBR600RR",2020, true);
         Coche coche = new Coche("Volkswagen", "Volkswagen Golf", 2017, 2);
-        Conductor conductor = new Conductor("Blanky", "C5448544");
+        Conductor conductor = new Conductor("Alejandro", "C5448544");
+        ConductorDeCoche conductordecoche = new ConductorDeCoche("Estuardo", "C45122", 2);
+        ConductorDeMoto conductordemoto = new ConductorDeMoto("Marisol", "M452214" , true);
 
         System.out.println("\nInformacion del vehiculo:");
         vehiculo.mostrarDetalles();
-        System.out.println("\nInformacion del conductor de la moto");
-        moto.mostrarDetalles();
-        System.out.println("\nInformacion completa del coche:");
-        coche.mostrarDetalles();
         System.out.println("\nInformacion del Conductor:");
         conductor.mostrarINFO();
+        System.out.println("\nInformacion del conductor de la moto");
+        moto.mostrarDetalles();
+        System.out.println("\nInformacion del conductor de coche:");
+        conductordecoche.mostrarINFO();
+        System.out.println("\nInformacion completa del coche:");
+        coche.mostrarDetalles();
+        System.out.println("\nInformacion del conductor de moto:");
+        conductordemoto.mostrarINFO();
+
     }
 }
